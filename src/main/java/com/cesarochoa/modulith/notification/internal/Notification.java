@@ -1,4 +1,4 @@
-package com.cesarochoa.modulith.notification;
+package com.cesarochoa.modulith.notification.internal;
 
 import lombok.Data;
 
@@ -14,7 +14,7 @@ public class Notification {
         this(null, null);
     }
 
-    Notification(NotificationType type, String message) {
+    public Notification(NotificationType type, String message) {
         this.type = type;
         this.message = message;
         this.date = OffsetDateTime.now();

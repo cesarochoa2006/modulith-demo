@@ -1,4 +1,4 @@
-package com.cesarochoa.modulith.product;
+package com.cesarochoa.modulith.product.internal;
 
 import lombok.Data;
 import lombok.experimental.Accessors;

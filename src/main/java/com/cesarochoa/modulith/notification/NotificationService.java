@@ -1,5 +1,7 @@
 package com.cesarochoa.modulith.notification;
 
+import com.cesarochoa.modulith.notification.internal.Notification;
+import com.cesarochoa.modulith.notification.internal.NotificationType;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
