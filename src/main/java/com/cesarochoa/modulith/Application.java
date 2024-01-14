@@ -4,8 +4,10 @@ import com.cesarochoa.modulith.notification.NotificationService;
 import com.cesarochoa.modulith.product.ProductService;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.scheduling.annotation.EnableAsync;
 
 @SpringBootApplication
+@EnableAsync
 public class Application {
 
     public static void main(String[] args) {
@@ -16,8 +18,11 @@ public class Application {
 
         applicationContext
                 .getBean(ProductService.class)
-                .createProduct("Product 1", "Description 1", 100.0
-                );
+                .createProduct("Product 1", "Description 1", 100.0);
+
+        applicationContext
+                .getBean(ProductService.class)
+                .createProductSmsEvent("Product 2", "Description 2", 200.0);
     }
 
 }

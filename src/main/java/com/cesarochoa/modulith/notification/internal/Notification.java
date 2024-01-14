@@ -10,7 +10,7 @@ public class Notification {
     private String message;
     private final OffsetDateTime date;
 
-    Notification(){
+    public Notification(){
         this(null, null);
     }
 
